@@ -86,15 +86,15 @@ sedangkan jika total pembelian melebihi 500 ribu maka berikan diskon sebesar 5% 
 */
 
 // soal nomor 4
-let hari = 1;
+let hari = 1; // nilai input yang akan dikirim ke switch case
 
 switch (hari) {
-  case 1:
+  case 1: // kondisi
     console.log("Monday");
     break;
   case 2:
     console.log("Tuesday");
-    break;
+    break; // menghentikan eksekusi ketika kondisi terpenuhi
   case 3:
     console.log("Wednesday");
     break;
@@ -111,7 +111,7 @@ switch (hari) {
     console.log("Sunday");
     break;
 
-  default:
+  default: // kodisi jika semua case tidak terpenuhi22
     console.log("input tidak valid");
     break;
 }
@@ -121,7 +121,7 @@ let nilaiLulus = 75;
 
 if (nilaiLulus >= 80) {
   console.log("anda lulus dengan sangat baik");
-} else if (nilaiLulus >= 70) {
+} else if (nilaiLulus >= 70 && nilaiLulus < 80) {
   console.log("lulus dengan baik");
 } else if (nilaiLulus <= 70) {
   console.log("lulus");
@@ -245,14 +245,14 @@ function hitungRataRata(a) {
 }
 const dataBilanganBulat = [2, 4, 6, 8, 10];
 const jawaban = hitungRataRata(dataBilanganBulat);
-console.log(jawaban);
+console.log("ini jawaban", jawaban);
 
 // soal 11 :
 
 function hitungKapital(a) {
   let jumlahKapital = 0;
   for (let i = 0; i < a.length; i++) {
-    if (a[i] === a[i].toUpperCase()) {
+    if (a[i] >= "A" && a[i].toUpperCase()) {
       jumlahKapital++;
     }
   }
@@ -262,9 +262,9 @@ function hitungKapital(a) {
 let string1 = "Hello Wordl";
 let string2 = "Kiw, Gimana kabarnya?";
 let string3 = "JAVaScRipT";
-console.log(hitungKapital(string1));
-console.log(hitungKapital(string2));
-console.log(hitungKapital(string3));
+console.log("ini :", hitungKapital(string1));
+console.log("jwb :", hitungKapital(string2));
+console.log("pokok :", hitungKapital(string3));
 
 // soal 12 :
 const nilaiTertinggi = [1, 34, 21, 54, 6567, 234, 65865, 98764, 23, 453];
